@@ -1,4 +1,4 @@
-console.log('Cargando...');
+console.log('Cargando........');
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
