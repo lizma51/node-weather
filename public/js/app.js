@@ -1,4 +1,4 @@
-console.log('Cargando........');
+console.log('Cargando.....');
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
     const lugar = search.value
     messege1.textContent = 'Cargando...'
     messege2.textContent = ''
-    fetch('http://localhost:3000/weather?search='+ lugar).then((response)=>{
+    fetch('/weather?search='+ lugar).then((response)=>{
         response.json().then((data) => {
             if(data.error) {
                 messege1.textContent = data.error
