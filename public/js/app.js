@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
             else {
                 console.log(data)
                 messege1.textContent = data.lugar
-                messege2.textContent = data.forecast.summary + data.forecast.temperature
+                messege2.textContent = data.forecast.summary + 'La temperatura actual es de ' + data.forecast.temperature + ' grados'
             }
         })
     })
